@@ -46,7 +46,8 @@ public class Server extends Thread {
             Socket conn;
             try {
                 conn = socket.accept();
-                if (conn.getInetAddress().toString().replace("/", "").startsWith("158.38.")) {
+                if (conn.getInetAddress().toString().replace("/", "").startsWith("158.38.") ||
+                        conn.getInetAddress().toString().replace("/", "").startsWith("127.0.")) {
                     Communicator d;
                     if(device instanceof Projector) {
                         d = new ProjectorCommunicator(conn, ((Projector) device), msg -> {

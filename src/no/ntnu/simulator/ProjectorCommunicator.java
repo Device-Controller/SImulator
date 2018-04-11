@@ -20,7 +20,7 @@ public class ProjectorCommunicator extends Communicator {
 
     public ProjectorCommunicator(Socket host, Projector projector, OnLog callback) {
         super(host, callback);
-        setName("D-" + getId());
+        setName("P-" + getId());
         this.projector = projector;
     }
 

@@ -220,6 +220,7 @@ public class Projector extends SimulatedDevice{
         this.thermal = thermal;
     }
 
+    @Override
     public String generateResponse(String string) {
         try {
             String command = string.substring(0, 4);

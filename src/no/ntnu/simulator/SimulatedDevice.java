@@ -1,4 +1,5 @@
 package no.ntnu.simulator;
 
-public class SimulatedDevice {
+public abstract class SimulatedDevice {
+    public abstract String generateResponse(String string);
 }
